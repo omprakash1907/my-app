@@ -9,16 +9,14 @@ import LearnMore from "./components/LearnMore";
 import OutputValues from "./components/OutputValues";
 import PricingSection from "./components/PricingSection";
 
-
 function App() {
   return (
     <>
       <div className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">
-          {/* <HeroSection /> */}
-          {/* <FeaturesPanel /> */}
-          {/* <KeyBenefits /> */}
+          <HeroSection />
+          <KeyBenefits />
           <PricingSection />
           <OutputValues />
           <LearnMore />
