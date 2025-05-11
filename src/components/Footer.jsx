@@ -3,6 +3,8 @@ import appgallery from "@/assets/image/appgallery.png";
 import apple from "@/assets/image/apple.png";
 import googleplay from "@/assets/image/googleplay.png";
 import assistant from "@/assets/image/du-assistant.png";
+import logo from '@/assets/image/logo.png'
+
 
 export default function Footer() {
   const footerLinks = {
@@ -282,8 +284,8 @@ export default function Footer() {
         <div className="pt-6 sm:pt-8 border-t border-gray-300">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="flex items-center mb-4 sm:mb-0">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#00205B] rounded-md flex items-center justify-center text-white font-bold text-xs sm:text-sm">
-                Logo
+              <div className="flex items-center justify-center">
+                <img src={logo} alt="logo" className="h-8" />
               </div>
             </div>
 
