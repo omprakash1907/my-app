@@ -10,10 +10,14 @@ First, clone the repository:
 git clone https://github.com/omprakash1907/my-app.git
 cd my-app
 
+
+
 Then install dependencies :
+```
+npm i
 
 ```
-npm i 
+ 
 
 Run the Application
 
