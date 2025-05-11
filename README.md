@@ -11,5 +11,5 @@ git clone https://github.com/omprakash1907/my-app.git
 cd my-app
 
 ```
-npm i 
+npm i \n
 npm run dev
