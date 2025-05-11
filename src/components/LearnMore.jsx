@@ -27,7 +27,7 @@ export default function LearnMore() {
 
   return (
     <section className="py-16 px-4">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

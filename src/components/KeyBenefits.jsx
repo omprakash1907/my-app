@@ -5,28 +5,28 @@ export default function KeyBenefits() {
     {
       number: "1",
       title: "This is a title this is a title second line",
-      description: "Lorem ipsum dolor sit amet consectetur. Pretium porttitor elit in consequat. Diam a amet sit.",
+      description: "Lorem ipsum dolor sit amet consectetur. Pharetra pulvinar sit in sed elementum. Nullam pellentesque.",
     },
     {
       number: "2",
       title: "This is a title this is a title second line",
-      description: "Lorem ipsum dolor sit amet consectetur. Pretium porttitor elit in consequat. Diam a amet sit.",
+      description: "Lorem ipsum dolor sit amet consectetur. Pharetra pulvinar sit in sed elementum. Nullam pellentesque.",
     },
     {
       number: "3",
       title: "This is a title this is a title second line",
-      description: "Lorem ipsum dolor sit amet consectetur. Pretium porttitor elit in consequat. Diam a amet sit.",
+      description: "Lorem ipsum dolor sit amet consectetur. Pharetra pulvinar sit in sed elementum. Nullam pellentesque.",
     },
     {
       number: "4",
       title: "This is a title this is a title second line",
-      description: "Lorem ipsum dolor sit amet consectetur. Pretium porttitor elit in consequat. Diam a amet sit.",
+      description: "Lorem ipsum dolor sit amet consectetur. Pharetra pulvinar sit in sed elementum. Nullam pellentesque.",
     },
   ]
 
   return (
     <section className="py-16 px-4">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
