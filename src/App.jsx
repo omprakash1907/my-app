@@ -16,9 +16,9 @@ function App() {
       <div className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">
-          <HeroSection />
-          <FeaturesPanel />
-          <KeyBenefits />
+          {/* <HeroSection /> */}
+          {/* <FeaturesPanel /> */}
+          {/* <KeyBenefits /> */}
           <PricingSection />
           <OutputValues />
           <LearnMore />
