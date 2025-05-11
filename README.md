@@ -16,7 +16,7 @@ Then install dependencies :
 ```
 npm i
 
-```
+
  
 
 Run the Application
