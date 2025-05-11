@@ -6,7 +6,7 @@ export default function MainHeader() {
   const [showSearch, setShowSearch] = useState(false);
 
   return (
-    <div className="backdrop-blur-md bg-white/50 border-b border-gray-300">
+    <div className="backdrop-blur-lg bg-white/10 border-gray-300 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center h-16">
         {/* Left Section - Logo and Navigation */}
         <div className="flex items-center space-x-8">
@@ -82,7 +82,7 @@ export default function MainHeader() {
               <Input
                 autoFocus
                 onBlur={() => setShowSearch(false)}
-                className="pl-10 h-8 border border-gray-300 focus-visible:ring-1 focus-visible:ring-[#00205B] focus-visible:border-transparent"
+                className="pl-10 h-8 border border-gray-300 focus-visible:ring-1 focus-visible:ring-[#00205B] focus-visible:border-transparent rounded-lg"
                 placeholder="Search..."
               />
             </div>
@@ -92,7 +92,7 @@ export default function MainHeader() {
           <Button
             variant="ghost"
             size="sm"
-            className="text-sm text-gray-700 hover:text-[#00205B] hover:bg-[#00205B]/10 px-3 py-1.5 transition-colors"
+            className="text-sm text-gray-700 hover:text-[#00205B] px-3 py-1.5 transition-colors"
           >
             عربى
           </Button>

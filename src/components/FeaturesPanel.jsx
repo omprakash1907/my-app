@@ -20,7 +20,7 @@ export default function FeaturesPanel() {
   }
 
   return (
-    <section className="py-12 px-4 bg-gray-50">
+    <section className="py-12 px-4 bg-[#EEEEEE]">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           variants={container}
