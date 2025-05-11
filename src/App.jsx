@@ -1,6 +1,5 @@
 import "./App.css";
 import FAQ from "./components/FAQ";
-import FeaturesPanel from "./components/FeaturesPanel";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
