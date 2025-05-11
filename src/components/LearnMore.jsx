@@ -1,23 +1,24 @@
-"use client"
-
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import learnmore1 from "@/assets/image/learnmore1.jpg"
+import learnmore2 from "@/assets/image/learnmore2.jpg"
+import learnmore3 from "@/assets/image/learnmore3.jpg"
 
 export default function LearnMore() {
   const articles = [
     {
-      image: "/placeholder.svg?height=200&width=300",
+      image: learnmore1,
       title: "What is Lorem?",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
-      image: "/placeholder.svg?height=200&width=300",
+      image: learnmore2,
       title: "What is Ipsum?",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
-      image: "/placeholder.svg?height=200&width=300",
+      image: learnmore3,
       title: "Lorem Ipsum",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -47,13 +48,11 @@ export default function LearnMore() {
               viewport={{ once: true }}
               className="flex flex-col"
             >
-              <div className="mb-4 overflow-hidden rounded-lg">
+              <div className="mb-4 overflow-hidden rounded-lg h-58">
                 <img
                   src={article.image || "/placeholder.svg"}
                   alt={article.title}
-                  width={300}
-                  height={200}
-                  className="w-full h-auto object-cover transition-transform hover:scale-105 duration-300"
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
                 />
               </div>
               <h3 className="text-xl font-bold mb-2">{article.title}</h3>

@@ -1,7 +1,10 @@
 
 import { Checkbox } from "@/components/ui/checkbox"
-import { Facebook, Instagram, Twitter, X } from "lucide-react"
+import { Facebook, Instagram, Twitter, X, Youtube } from "lucide-react"
 import { Link } from "react-router-dom"
+import appgallery from '@/assets/image/appgallery.png'
+import apple from '@/assets/image/apple.png'
+import googleplay from '@/assets/image/googleplay.png'
 
 export default function Footer() {
   const footerLinks = {
@@ -102,7 +105,7 @@ export default function Footer() {
             <div className="flex flex-wrap gap-2 mb-6">
               <Link href="#" className="inline-block">
                 <img
-                  src="/placeholder.svg?height=40&width=120"
+                  src={apple}
                   alt="App Store"
                   width={120}
                   height={40}
@@ -111,7 +114,7 @@ export default function Footer() {
               </Link>
               <Link href="#" className="inline-block">
                 <img
-                  src="/placeholder.svg?height=40&width=120"
+                  src={googleplay}
                   alt="Google Play"
                   width={120}
                   height={40}
@@ -120,7 +123,7 @@ export default function Footer() {
               </Link>
               <Link href="#" className="inline-block">
                 <img
-                  src="/placeholder.svg?height=40&width=120"
+                  src={appgallery}
                   alt="Huawei AppGallery"
                   width={120}
                   height={40}
@@ -144,7 +147,7 @@ export default function Footer() {
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link href="#" className="text-gray-600 hover:text-gray-900">
-                <X className="h-5 w-5" />
+                <Youtube className="h-5 w-5" />
                 <span className="sr-only">X</span>
               </Link>
             </div>
