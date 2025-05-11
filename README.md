@@ -1,6 +1,6 @@
 # My App
 
-This is a full-stack project built with Node.js and Express.js.
+This is a full-stack project built with **Node.js** and **Express.js**.
 
 ## 📦 Installation
 
@@ -10,16 +10,6 @@ First, clone the repository:
 git clone https://github.com/omprakash1907/my-app.git
 cd my-app
 
-
-
-Then install dependencies :
 ```
-npm i
-
-
- 
-
-Run the Application
-
-```
+npm i 
 npm run dev
