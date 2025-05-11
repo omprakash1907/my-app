@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export default function HeroSection() {
   return (
-    <section className="py-16 px-4 relative overflow-hidden">
+    <section className="py-16 px-4 relative overflow-hidden bg-[#EEEEEE]">
       <div className="container mx-auto max-w-6xl relative">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <motion.div
