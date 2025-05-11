@@ -17,7 +17,7 @@ function App() {
         <Header />
         <main className="flex-1">
           <HeroSection />
-          {/* <FeaturesPanel /> */}
+          <FeaturesPanel />
           <KeyBenefits />
           <PricingSection />
           <OutputValues />
