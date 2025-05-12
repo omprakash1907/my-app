@@ -68,7 +68,7 @@ export default function FAQ() {
 
   return (
     <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto">
         {/* Stack cards vertically on mobile, side by side on larger screens */}
         <div className="flex flex-col lg:flex-row gap-6">
           {/* FAQ Card */}
@@ -82,17 +82,17 @@ export default function FAQ() {
               <p className="text-muted-foreground text-center mb-6">
                 Find answers to common questions about our products and services.
               </p>
-              
-              <Accordion 
-                type="single" 
-                collapsible 
+
+              <Accordion
+                type="single"
+                collapsible
                 className="w-full"
                 value={activeItem}
                 onValueChange={setActiveItem}
               >
                 {faqs.map((faq) => (
                   <AccordionItem key={faq.id} value={faq.id}>
-                    <AccordionTrigger className="text-left hover:no-underline px-4 py-3">
+                    <AccordionTrigger className="text-left hover:no-underline px-4 py-3 hover:cursor-pointer">
                       <span className="font-medium text-base sm:text-lg">{faq.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground px-4 pb-3">
@@ -115,17 +115,17 @@ export default function FAQ() {
               <p className="text-muted-foreground text-center mb-6">
                 Please read these terms carefully before using our services.
               </p>
-              
-              <Accordion 
-                type="single" 
-                collapsible 
+
+              <Accordion
+                type="single"
+                collapsible
                 className="w-full"
                 value={activeItem}
                 onValueChange={setActiveItem}
               >
                 {terms.map((term) => (
                   <AccordionItem key={term.id} value={term.id}>
-                    <AccordionTrigger className="text-left hover:no-underline px-4 py-3">
+                    <AccordionTrigger className="text-left hover:no-underline px-4 py-3 hover:cursor-pointer">
                       <span className="font-medium text-base sm:text-lg">{term.title}</span>
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground px-4 pb-3">
@@ -150,10 +150,10 @@ export default function FAQ() {
               <p className="text-muted-foreground text-center mb-6">
                 Please read these terms carefully before using our services.
               </p>
-              
-              <Accordion 
-                type="single" 
-                collapsible 
+
+              <Accordion
+                type="single"
+                collapsible
                 className="w-full"
                 value={activeItem}
                 onValueChange={setActiveItem}

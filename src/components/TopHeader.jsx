@@ -46,11 +46,10 @@ export default function TopHeader() {
               <div key={idx} className="relative group">
                 <button
                   variant="ghost"
-                  className="text-white text-sm hover:bg-transparent hover:cursor-pointer px-0 py-1 transition-colors"
+                  className="text-white text-sm hover:bg-transparent hover:underline hover:cursor-pointer px-0 py-1 transition-colors"
                 >
                   {link}
                 </button>
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
               </div>
             )
           )}
