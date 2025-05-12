@@ -146,7 +146,7 @@ export default function OutputValues() {
                       left: "20px",
                       right: "20px",
                       bottom: "20px",
-                    }}
+                    }} 
                   ></div>
 
                   {/* Innermost ring - dark blue (30px) - offset by 30px to show white middle */}
