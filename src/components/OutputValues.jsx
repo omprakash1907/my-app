@@ -1,10 +1,15 @@
-
-import { useState, useEffect } from "react"
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Input } from "@/components/ui/input"
-import { Slider } from "@/components/ui/slider"
+import { useState, useEffect } from "react";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Input } from "@/components/ui/input";
+import { Slider } from "@/components/ui/slider";
 
 export default function OutputValues() {
   const [selectedPlan, setSelectedPlan] = useState("Plan 250 - 250 TH/s");
@@ -24,11 +29,11 @@ export default function OutputValues() {
     setRoi(104.51);
   }, [selectedPlan, planCount, months, btcPrice]);
 
+  const returnValue = 104.51
+
   return (
     <div className="w-full container mx-auto px-4">
-      <div className="font-bold text-gray-500">
-        ROI CALCULATOR
-      </div>
+      <div className="font-bold text-gray-500">ROI CALCULATOR</div>
       <div className="bg-white">
         <h1 className="text-3xl font-bold text-slate-800 mb-8">
           See your potential.
@@ -115,36 +120,63 @@ export default function OutputValues() {
           </div>
 
           <div className="flex flex-col justify-between">
-            <Card className="p-6 border rounded-md flex flex-col items-center">
-              <div className="text-sm text-gray-500 mb-2">INVESTMENT</div>
-              <div className="text-2xl font-bold mb-6">
-                $
-                {investment.toLocaleString("en-US", {
-                  minimumFractionDigits: 2,
-                  maximumFractionDigits: 2,
-                })}
+            <Card className="p-6 border rounded-md flex flex-col ">
+              <div>
+                <div className="text-sm font-bold text-gray-500">
+                  HASHRATE FEE
+                </div>
+                <div className="text-3xl font-bold mb-6">
+                  $
+                  {investment.toLocaleString("en-US", {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })}
+                </div>
               </div>
+              <div className="flex justify-center items-center w-full p-6">
+                <div className="relative w-64 h-64">
+                  {/* Outermost ring - light blue (10px) */}
+                  <div className="absolute inset-0 rounded-full border-[10px] border-[#ADD8E6]"></div>
 
-              <div className="relative w-48 h-48 mb-6">
-                <div className="absolute inset-0 rounded-full border-[16px] border-[#e6f0f9]"></div>
-                <div
-                  className="absolute inset-0 rounded-full border-[16px] border-transparent"
-                  style={{
-                    borderTopColor: "#3498db",
-                    borderRightColor: "#3498db",
-                    borderBottomColor: roi > 100 ? "#3498db" : "transparent",
-                    borderLeftColor: roi > 75 ? "#3498db" : "transparent",
-                    transform: "rotate(45deg)",
-                  }}
-                ></div>
-                <div className="absolute inset-0 flex items-center justify-center flex-col">
-                  <div className="text-xs text-gray-500">PROFIT RATIO</div>
-                  <div className="text-xl font-bold text-slate-800">
-                    {roi.toFixed(2)}%
+                  {/* Middle ring - white (20px) - offset by 10px to show light blue outer */}
+                  <div
+                    className="absolute rounded-full border-[20px] border-white"
+                    style={{
+                      top: "20px",
+                      left: "20px",
+                      right: "20px",
+                      bottom: "20px",
+                    }}
+                  ></div>
+
+                  {/* Innermost ring - dark blue (30px) - offset by 30px to show white middle */}
+                  <div
+                    className="absolute rounded-full border-[20px] border-[#2F4F7F]"
+                    style={{
+                      top: "20px",
+                      left: "20px",
+                      right: "20px",
+                      bottom: "20px",
+                    }}
+                  ></div>
+
+                  {/* Text display */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center">
+                    <div
+                      className="text-xs text-[#333333] mb-1"
+                      style={{ fontFamily: "Open Sans, sans-serif" }}
+                    >
+                      MINING RETURN
+                    </div>
+                    <div
+                      className="text-2xl font-bold text-[#333333]"
+                      style={{ fontFamily: "Open Sans, sans-serif" }}
+                    >
+                      {returnValue.toFixed(2)}%
+                    </div>
                   </div>
                 </div>
               </div>
-
               <div className="grid grid-cols-2 w-full gap-4">
                 <div className="text-center">
                   <div className="text-xs text-gray-500">Investments</div>
@@ -167,11 +199,10 @@ export default function OutputValues() {
                   </div>
                 </div>
               </div>
+              <Button className="w-full bg-gradient-to-r from-[#663AB6] to-[#BB3AB1] text-white py-2 mt-4">
+                View our Plans
+              </Button>
             </Card>
-
-            <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 mt-4">
-              View our Plans
-            </Button>
           </div>
         </div>
       </div>
