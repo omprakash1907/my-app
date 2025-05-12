@@ -39,7 +39,7 @@ export default function OutputValues() {
           See your potential.
         </h1>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 items-center gap-8">
           <div className="space-y-6">
             <div className="space-y-2">
               <label className="text-sm font-medium">Select a plan</label>
@@ -133,10 +133,11 @@ export default function OutputValues() {
                   })}
                 </div>
               </div>
-              <div className="flex justify-center items-center w-full p-6">
-                <div className="relative w-64 h-64">
+              <div className="flex justify-center items-center w-full">
+                <div className="relative w-68 h-68">
                   {/* Outermost ring - light blue (10px) */}
-                  <div className="absolute inset-0 rounded-full border-[10px] border-[#ADD8E6]"></div>
+                  <div className="absolute inset-0 rounded-full border-[15px] border-[#ADD8E6]"></div>
+                  {/* <div className="absolute inset-0 rounded-full border-[20px] border-[#FFFFFF]"></div> */}
 
                   {/* Middle ring - white (20px) - offset by 10px to show light blue outer */}
                   <div
@@ -153,10 +154,10 @@ export default function OutputValues() {
                   <div
                     className="absolute rounded-full border-[20px] border-[#2F4F7F]"
                     style={{
-                      top: "20px",
-                      left: "20px",
-                      right: "20px",
-                      bottom: "20px",
+                      top: "30px",
+                      left: "30px",
+                      right: "30px",
+                      bottom: "30px",
                     }}
                   ></div>
 
@@ -199,7 +200,7 @@ export default function OutputValues() {
                   </div>
                 </div>
               </div>
-              <Button className="w-full bg-gradient-to-r from-[#663AB6] to-[#BB3AB1] text-white py-2 mt-4">
+              <Button className="w-full bg-gradient-to-r from-[#663AB6] to-[#BB3AB1] text-white py-2 mt-4 hover:cursor-pointer">
                 View our Plans
               </Button>
             </Card>

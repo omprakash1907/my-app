@@ -45,7 +45,7 @@ export default function PricingSection() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold mb-2">Choose Your Package</h2>
+          <h2 className="text-5xl font-nomral mb-3 text-[#333333] actor-font">Choose Your Package</h2>
           <p className="text-gray-600 mb-10 max-w-2xl">
             Most popular plans for small and medium businesses or you can select
             your own plan options below
@@ -53,7 +53,7 @@ export default function PricingSection() {
         </motion.div>
 
         <div className="flex items-center mb-6">
-          <button className="flex items-center gap-2 border rounded-md px-3 py-2 text-sm">
+          <button className="flex items-center gap-2 border rounded-md px-3 py-2 text-sm hover:cursor-pointer">
             12-month contract
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ export default function PricingSection() {
                   <h3 className="font-bold text-lg mt-2">{pkg.name}</h3>
                 </CardHeader>
                 <CardContent className="pb-2">
-                  <p className="text-gray-300 text-sm mb-2">Spec</p>
+                  <p className="text-gray-400 text-sm mb-2">Spec</p>
                   <div className="flex items-center gap-2 mb-4">
                     <svg
                       width="18"
